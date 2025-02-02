@@ -81,6 +81,9 @@ $ yarn add --dev prettier prettier-plugin-astro
 ### ◯ ESLint
 ```sh
 $ yarn add --dev eslint eslint-plugin-astro @typescript-eslint/parser eslint-config-prettier eslint-plugin-jsx-a11y
+
+# ESLintの警告文を消すために
+$ yarn add --dev @astrojs/check typescript
 ```
 ### ◯ @astrojs/react
 ```sh
