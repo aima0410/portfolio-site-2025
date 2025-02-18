@@ -1,2 +1,55 @@
 ---
+// ---- Components ----
+import SectionContainer from '@layouts/container/SectionContainer.astro';
+import SectionHeading from '@components/typography/SectionHeading.astro';
+// ---- Images ----
+import { Image } from 'astro:assets';
+import profileImage from '@images/profile.jpg';
 ---
+
+<SectionContainer>
+  <SectionHeading />
+  <Image src={profileImage} alt="" />
+  <p>かりこ</p>
+  <p>1998年7月生まれの26歳</p>
+  <p>神奈川県 川崎市 出身</p>
+  <p>
+    福岡県在住のマルチクリエイターです。<br />
+    はじまりは趣味のイラストをキッカケに頂いたグラフィックデザインのお仕事でした。そこからわらしべ長者の要領でWebデザイン、コーディング、フロントエンドと少しずつ技術の幅を広げ、現在に至ります。
+  </p>
+  <section>
+    <h3>NOTE</h3>
+    <article>
+      <h1>かりこの由来</h1>
+      <p>かりこは高校時代のあだ名</p>
+    </article>
+    <article>
+      <h1>自己分析</h1>
+      <p>後天的に社交性を身に着けた</p>
+    </article>
+    <article>
+      <h1>今後の展望</h1>
+      <p>残りの人生は臆せず</p>
+    </article>
+  </section>
+  <section>
+    <h3>SKILL SET</h3>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>TypeScript</li>
+    </ul>
+  </section>
+  <section>
+    <h3>LATEST BLOG</h3>
+    <img src="#" alt="" />
+    <p>ブログのタイトル</p>
+  </section>
+  <section>
+    <h3>FAVO MUSIC</h3>
+    <img src="#" alt="" />
+    <p>『ビリミリオン』優里</p>
+    <div>▷</div>
+  </section>
+</SectionContainer>
