@@ -1,3 +1,45 @@
 ---
-
+// ---- Components ----
+import SectionContainer from '@layouts/container/SectionContainer.astro';
+import SectionHeading from '@components/typography/SectionHeading.astro';
+// ---- Images ----
+import { Image } from 'astro:assets';
+import LaTempoImage from '@assets/images/works/LaTempo.png';
 ---
+
+<SectionContainer>
+  <SectionHeading />
+  <Image src={LaTempoImage} alt="" />
+  <ol>
+    <li>
+      <h3>複合施設 La Tempo</h3>
+      <img src="#" alt="LaTempo">
+      <ul>
+        <li>2022</li>
+        <li>Webデザイン</li>
+        <li>顧客折衝</li>
+      </ul>
+      <button>VIEW MORE</button>
+    </li>
+    <li>
+      <h3>タイトル</h3>
+      <img src="#" alt="画像">
+      <ul>
+        <li>ラベル１</li>
+        <li>ラベル２</li>
+        <li>ラベル３</li>
+      </ul>
+      <button>VIEW MORE</button>
+    </li>
+    <li>
+      <h3>タイトル</h3>
+      <img src="#" alt="画像">
+      <ul>
+        <li>ラベル１</li>
+        <li>ラベル２</li>
+        <li>ラベル３</li>
+      </ul>
+      <button>VIEW MORE</button>
+    </li>
+  </ol>
+</SectionContainer>
