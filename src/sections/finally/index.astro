@@ -1,3 +1,31 @@
 ---
-
+// ---- Components ----
+import SectionContainer from '@layouts/container/SectionContainer.astro';
+import SectionHeading from '@components/typography/SectionHeading.astro';
+// ---- Images ----
+import { Image } from 'astro:assets';
+import KamabokoImage from '@assets/images/introduce/kamaboko.webp';
+import YusukeSanoImage from '@assets/images/introduce/YusukeSano.webp';
 ---
+
+<SectionContainer>
+  <SectionHeading />
+  <p>今回ポートフォリオサイトを作るにあたって参考にさせて頂いた作品はこちら。</p>
+  <ol>
+    <li>
+      <h3>かまぼこのへや</h3>
+      <Image src={KamabokoImage} alt="かまぼこのへや" />
+      <p>01</p>
+      <a href="https://bokoko33.me/">https://bokoko33.me/</a>
+      <button>VISIT SITE</button>
+    </li>
+    <li>
+      <h3>Yusuke Sano</h3>
+      <Image src={YusukeSanoImage} alt="Yusuke Sano" />
+      <p>02</p>
+      <a href="https://yusuke.sn/ja">https://yusuke.sn/ja</a>
+      <button>VISIT SITE</button>
+    </li>
+  </ol>
+  <p>今度は私の作品が誰かにとっての創作のキッカケとなりますように。</p>
+</SectionContainer>
