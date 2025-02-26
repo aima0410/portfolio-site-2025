@@ -1,3 +1,22 @@
 ---
-
+// ---- Components ----
+import SectionContainer from "@layouts/container/SectionContainer.astro";
+import SectionHeading from "@components/typography/SectionHeading.astro";
+// ---- Images ----
+// import { Image } from "astro:assets";
 ---
+<SectionContainer>
+  <SectionHeading />
+  <ol>
+    <li>
+      <h3>パスワード生成アプリ</h3>
+      <!-- <Image src={} alt="" /> -->
+      <button>PLAY DEMO</button>
+    </li>
+    <li>
+      <h3>カウントダウンアプリ</h3>
+      <!-- <Image src={} alt="" /> -->
+      <button>PLAY DEMO</button>
+    </li>
+  </ol>
+</SectionContainer>
