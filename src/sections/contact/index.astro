@@ -1,3 +1,28 @@
 ---
-
+// ---- Components ----
+import SectionContainer from '@layouts/container/SectionContainer.astro';
+import SectionHeading from '@components/typography/SectionHeading.astro';
+// ---- Images ----
+import { Image } from 'astro:assets';
+import XIconImage from '@assets/images/sns/X.svg';
+import InstagramIconImage from '@assets/images/sns/Instagram.svg';
+import GithubIconImage from '@assets/images/sns/Github.svg';
 ---
+
+<SectionContainer>
+  <SectionHeading />
+  <ul>
+    <li>
+      <h3>X</h3>
+      <Image src={XIconImage} alt="" />
+    </li>
+    <li>
+      <h3>Instagram</h3>
+      <Image src={InstagramIconImage} alt="" />
+    </li>
+    <li>
+      <h3>Github</h3>
+      <Image src={GithubIconImage} alt="" />
+    </li>
+  </ul>
+</SectionContainer>
