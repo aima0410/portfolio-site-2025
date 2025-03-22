@@ -1,7 +1,46 @@
 ---
-
+// ---- Fonts ----
+import '@fontsource-variable/noto-sans-jp'; // weights:100-900
+// ---- Sections ----
+import Header from '@sections/header/index.astro';
+import Hero from '@sections/hero/index.astro';
+import AboutMe from '@sections/aboutme/index.astro';
+import Works from '@sections/works/index.astro';
+import ToolBox from '@sections/toolbox/index.astro';
+import Contact from '@sections/contact/index.astro';
+import Finally from '@sections/finally/index.astro';
+import Footer from '@sections/footer/index.astro';
+// ---- Layouts ----
+import EmptyContainer from '@layouts/container/EmptyContainer.astro';
 ---
 
-<>
-	<h1>Hello, Astro!</h1>
-</>
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>かりこ｜ポートフォリオサイト</title>
+  </head>
+
+  <Header />
+  <main>
+    <Hero />
+    <AboutMe />
+    <EmptyContainer />
+    <Works />
+    <ToolBox />
+    <EmptyContainer />
+    <Contact />
+    <Contact />
+    <Finally />
+  </main>
+  <Footer />
+
+  <style>
+    :root {
+      font-family: 'Noto Sans JP Variable', sans-serif;
+    }
+  </style>
+
+
+</html>
